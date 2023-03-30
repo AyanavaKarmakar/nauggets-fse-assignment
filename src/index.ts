@@ -1,11 +1,10 @@
 import express from "express";
-import { json } from "body-parser";
-import { todoRouter } from "./routes/todo";
-import { connectDB } from "./db/connect";
+// import { connectDB } from "./db/connect";
+import { profitAndLossRouter } from "./routes/profitAndLoss";
 
 const app = express();
-app.use(json());
-app.use(todoRouter);
+
+app.use(profitAndLossRouter);
 
 const start = async () => {
   try {
