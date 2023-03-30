@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose from "mongoose";
 
 interface IGoldTransaction {
   userId: mongoose.Types.ObjectId;
